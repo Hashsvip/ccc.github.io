@@ -1,0 +1,7 @@
+{
+    "satellite": {
+        "satelliteId": "o4lue-vqaaa-aaaal-ajcpq-cai",
+        "source": ".",
+        "ignore": ["**/juno.json", "**/.github/**/*", "**/CNAME", "**/LICENSE", "**/README.md", "**/.git/**/*"]
+    }
+}
