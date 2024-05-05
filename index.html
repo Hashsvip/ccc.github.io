@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Utopia</title>
+    <!-- 引用外部 CSS 文件 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 添加网站图标链接 -->
+    <link rel="icon" href="utopia.ico" type="image/x-icon">
+    <!-- 引入 Chart.js 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* 设置全局样式 */
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* 设置 body 的样式 */
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        /* 设置容器的样式 */
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        /* 设置标题样式 */
+        
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        /* 设置导航菜单样式 */
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        /* 设置图表容器的样式 */
+        
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        /* 设置每个 .chart 的样式 */
+        
+        .chart {
+            flex: 0 0 45%;
+            /* 设置每个图表的宽度为 45%，留下一些空白间距 */
+            margin-bottom: 20px;
+            /* 添加一些底部间距 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="container">
+                <!-- 添加 logo -->
+                <img src="./logo/utopialogo.png" alt="Our Utopia Logo" class="img-responsive">
+                <h1><a href="index.html">Our Utopia</a></h1>
+                <!-- 添加超链接 -->
+                <nav>
+                    <ul>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#core-values">Core Values</a></li>
+                        <li><a href="#goals">Goals</a></li>
+                        <li><a href="#action-plan">Action Plan</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                        <li><a href="#Utopiacoin">Utopiacoin/UTOcoin</a></li>
+                        <li><a href="https://ic.house/token/qq4ny-aaaaa-aaaam-aclla-cai">UTOCOIN Info</a></li>
+                        <!-- 添加UTOCOIN代币信息链接 -->
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <section id="introduction">
+        <div class="container">
+            <h2>Establishing Our Utopia: Realizing the Vision of an Ideal Society</h2>
+            <p>In this ever-changing world, we dream of an ideal society, a place where everyone can fully realize their potential, filled with love and respect. We believe that through collective effort and dedication, we can build a true utopia, a place
+                we can call home. Below is the detailed plan for establishing our utopia:</p>
+        </div>
+    </section>
+
+    <section id="vision">
+        <div class="container">
+            <h2>Vision</h2>
+            <p>Our vision is to create a society filled with peace, fairness, and prosperity. In our utopia, everyone will enjoy equal rights and opportunities, regardless of race, gender, religion, or economic status. We will base our society on environmental
+                sustainability, respecting nature and protecting the Earth to ensure our society's continued development.</p>
+        </div>
+    </section>
+
+    <section id="core-values">
+        <div class="container">
+            <h2>Core Values</h2>
+            <ul>
+                <li><strong>Equality and Justice:</strong> We are committed to eliminating all forms of discrimination and inequality, ensuring that everyone is treated with respect and equality in a just society.</li>
+                <li><strong>Community and Cooperation:</strong> We encourage people to come together, collaborate, and build a community filled with love and respect, creating a better future together.</li>
+                <li><strong>Sustainable Development:</strong> We view environmental sustainability as the cornerstone of social development, taking action to protect natural resources, reduce negative impacts on the Earth, and ensure that future generations
+                    can also enjoy a better life.</li>
+                <li><strong>Education and Wisdom:</strong> We value education, encouraging people to pursue knowledge and wisdom to cultivate well-rounded individuals, driving social progress and prosperity.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="goals">
+        <div class="container">
+            <h2>Goals</h2>
+            <ul>
+                <li><strong>Community Building:</strong> We will establish an inclusive community, providing various resources and support to meet people's basic needs and promote social development and prosperity.</li>
+                <li><strong>Education and Training:</strong> We will provide high-quality education and training opportunities to help individuals fully realize their potential and prepare for their future.</li>
+                <li><strong>Environmental Protection:</strong> We will take action to protect the environment, promote sustainable lifestyles, and reduce negative impacts on the Earth.</li>
+                <li><strong>Social Justice:</strong> We will strive to eliminate social inequality, promote human rights and justice, ensuring that everyone is treated with respect and equality.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="action-plan">
+        <div class="container">
+            <h2>Action Plan</h2>
+            <ul>
+                <li><strong>Community Engagement:</strong> We will actively encourage community engagement, listen to opinions and suggestions from all sectors, and jointly develop and implement solutions.</li>
+                <li><strong>Partnerships:</strong> We will establish partnerships with governments, businesses, and non-profit organizations to jointly promote social development and change.</li>
+                <li><strong>Education and Advocacy:</strong> We will conduct educational advocacy activities to raise awareness and understanding of social issues, promoting social progress and development.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <div class="container">
+            <h2>Conclusion</h2>
+            <p>We believe that through collective effort and dedication, we can build a true utopia, a society filled with love and respect where everyone can realize their dreams. Let us join hands and work together to create a better future!</p>
+        </div>
+    </section>
+    <section id="introduction">
+        <div class="container">
+            <h2>Establishing Our Utopia: Realizing the Vision of an Ideal Society</h2>
+            <p>In this ever-changing world, we dream of an ideal society, a place where everyone can fully realize their potential, filled with love and respect. We believe that through collective effort and dedication, we can build a true utopia, a place
+                we can call home. Below is the detailed plan for establishing our utopia:</p>
+        </div>
+    </section>
+
+    <!-- 省略其他部分 -->
+
+    <section id="Utopiacoin">
+        <div class="container">
+            <h2>Introducing Utopiacoin and Utocoin</h2>
+            <p>Introducing two currencies into your utopian community is an intriguing concept! utopiacoin and utocoin each have their unique features and functions, providing community members with more choices and flexibility. Let me help you explain the
+                characteristics and operations of these two currencies:</p>
+
+            <h3>UTOPIACOIN:</h3>
+            <ul>
+                <li><strong>Total Supply:</strong> 100 million coins</li>
+                <li><strong>Serving as Utopia's Fixed Asset:</strong> utopiacoin represents the fixed assets of the utopian community, reflecting the overall value and wealth of the community. Within the utopian community, utopiacoin may be used to purchase
+                    land, housing, infrastructure, and as tokens for community governance and voting rights.</li>
+                <li>
+                    utopiacoin tokens will be exchanged 1:1890000 with utocoin tokens, with all utopiacoin tokens being fully exchanged for utocoin tokens. Additionally, the utocoin tokens exchanged will subsequently be burned.</li>
+            </ul>
+
+            <h3>UTOCOIN:</h3>
+            <ul>
+                <li><strong>Total Supply:</strong> 2.1 trillion coins</li>
+                <li><strong>Exchangeable with utopiacoin:</strong> utocoin can be exchanged with utopiacoin, providing community members with a flexible means of payment and exchange.</li>
+                <li><strong>Burning Mechanism:</strong> During the exchange process, utopiacoin will be burned until the quantity reaches 210 billion coins, helping to maintain the stability and value of utocoin.</li>
+            </ul>
+
+            <p>Introducing these two currencies can bring multiple benefits, such as increasing transaction choices among community members, balancing fixed and liquid assets, and regulating currency supply and stabilizing currency value through the burning
+                mechanism. Ensure that the implementation takes into account the needs and interests of community members, as well as the reasonableness and transparency of currency supply and governance mechanisms.</p>
+        </div>
+    </section>
+    <!-- 代币分配分析图表 -->
+    <section id="token-distribution">
+        <div class="container">
+            <h2>UTOPIA Token Distribution Analysis</h2>
+            <div class="chart-container">
+                <!-- 第一个代币的饼图 -->
+                <div class="chart">
+                    <h3>UTOCOIN Token A Distribution</h3>
+                    <p>Token Standard:ICRC 2</p>
+                    <p>Canister:qq4ny-aaaaa-aaaam-aclla-cai</p>
+                    <p>Total Supply: 210,000,000,000,000</p>
+                    <canvas id="tokenAChart" width="400" height="400"></canvas>
+                </div>
+
+                <!-- 第二个代币的饼图 -->
+                <div class="chart">
+                    <h3>UTOPIACOIN Token B Distribution</h3>
+                    <p>Token Standard:ICRC 2</p>
+                    <p>Canister:$$$$$$$$$$$$$$</p>
+                    <p>Total Supply: 100,000,000</p>
+                    <canvas id="tokenBChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript 代码 -->
+    <script>
+        // 获取第一个 canvas 元素
+        var ctxA = document.getElementById('tokenAChart').getContext('2d');
+        // 创建第一个代币的饼图
+        var tokenAChart = new Chart(ctxA, {
+            type: 'pie',
+            data: {
+                labels: ['LP POOL', 'Airdrop UTOCOIN', ],
+                datasets: [{
+                    label: 'Token A Distribution',
+                    data: [90, 10, ], // 修改数据以反映实际的代币分配比例
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: false,
+                tooltips: {
+                    callbacks: {
+                        label: function(tooltipItem, data) {
+                            var dataset = data.datasets[tooltipItem.datasetIndex];
+                            var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                                return previousValue + currentValue;
+                            });
+                            var currentValue = dataset.data[tooltipItem.index];
+                            var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
+                            return percentage + "%";
+                        }
+                    }
+                }
+            }
+        });
+
+        // 获取第二个 canvas 元素
+        var ctxB = document.getElementById('tokenBChart').getContext('2d');
+        // 创建第二个代币的饼图
+        var tokenBChart = new Chart(ctxB, {
+            type: 'pie',
+            data: {
+                labels: ['UTOPIACOIN SWAP UTOCIN', ],
+                datasets: [{
+                    label: 'Token B Distribution',
+                    data: [100, ], // 修改数据以反映实际的代币分配比例
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: false,
+                tooltips: {
+                    callbacks: {
+                        label: function(tooltipItem, data) {
+                            var dataset = data.datasets[tooltipItem.datasetIndex];
+                            var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                                return previousValue + currentValue;
+                            });
+                            var currentValue = dataset.data[tooltipItem.index];
+                            var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
+                            return percentage + "%";
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Our Utopia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
