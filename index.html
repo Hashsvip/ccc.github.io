@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Utopia</title>
-    <!-- 引用外部 CSS 文件 -->
+    <!-- Include external CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <!-- 添加网站图标链接 -->
+    <!-- Add website favicon link -->
     <link rel="icon" href="utopia.ico" type="image/x-icon">
-    <!-- 引入 Chart.js 库 -->
+    <!-- Include Chart.js library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        /* 设置全局样式 */
+        /* Set global styles */
         
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-        /* 设置 body 的样式 */
+        /* Set body styles */
         
         body {
             font-family: Arial, sans-serif;
@@ -29,7 +29,7 @@
             margin: 0;
             padding: 0;
         }
-        /* 设置容器的样式 */
+        /* Set container styles */
         
         .container {
             width: 80%;
@@ -37,7 +37,7 @@
             overflow: hidden;
             padding: 20px;
         }
-        /* 设置标题样式 */
+        /* Set heading styles */
         
         h1,
         h2,
@@ -45,7 +45,7 @@
             margin-bottom: 20px;
             color: #333;
         }
-        /* 设置导航菜单样式 */
+        /* Set navigation menu styles */
         
         nav ul {
             list-style: none;
@@ -60,7 +60,7 @@
             text-decoration: none;
             color: #333;
         }
-        /* 设置图表容器的样式 */
+        /* Set chart container styles */
         
         .chart-container {
             display: flex;
@@ -68,13 +68,36 @@
             flex-wrap: wrap;
             margin-top: 20px;
         }
-        /* 设置每个 .chart 的样式 */
+        /* Set styles for each .chart */
         
         .chart {
             flex: 0 0 45%;
-            /* 设置每个图表的宽度为 45%，留下一些空白间距 */
+            /* Set width of each chart to 45%, leaving some whitespace */
             margin-bottom: 20px;
-            /* 添加一些底部间距 */
+            /* Add some bottom margin */
+        }
+        
+        .progress-bar-container {
+            margin-bottom: 20px;
+        }
+        
+        .progress-bar {
+            background-color: #444;
+            border-radius: 20px;
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+        
+        .progress-bar-fill {
+            background-color: #0F0;
+            height: 20px;
+            border-radius: 20px;
+            transition: width 0.5s ease-in-out;
+        }
+        
+        .progress-label {
+            font-size: 14px;
+            margin-bottom: 5px;
         }
     </style>
 
@@ -84,10 +107,10 @@
     <header>
         <div class="container">
             <div class="container">
-                <!-- 添加 logo -->
+                <!-- Add logo -->
                 <img src="./logo/utopialogo.png" alt="Our Utopia Logo" class="img-responsive">
                 <h1><a href="index.html">Our Utopia</a></h1>
-                <!-- 添加超链接 -->
+                <!-- Add hyperlinks -->
                 <nav>
                     <ul>
                         <li><a href="#introduction">Introduction</a></li>
@@ -96,9 +119,10 @@
                         <li><a href="#goals">Goals</a></li>
                         <li><a href="#action-plan">Action Plan</a></li>
                         <li><a href="#conclusion">Conclusion</a></li>
-                        <li><a href="#Utopiacoin">Utopiacoin/UTOcoin</a></li>
+                        <li><a href="#Utopiacoin">PIACOIN/UTOCOIN</a></li>
                         <li><a href="https://ic.house/token/qq4ny-aaaaa-aaaam-aclla-cai">UTOCOIN Info</a></li>
-                        <!-- 添加UTOCOIN代币信息链接 -->
+                        <li><a href="https://ic.house/token/uuoc6-fiaaa-aaaam-aclqq-cai">PIACOIN Info</a></li>
+                        <!-- Add UTOCOIN token information link -->
                     </ul>
                 </nav>
             </div>
@@ -170,7 +194,7 @@
         </div>
     </section>
 
-    <!-- 省略其他部分 -->
+    <!-- Omitted other parts -->
 
     <section id="Utopiacoin">
         <div class="container">
@@ -178,13 +202,13 @@
             <p>Introducing two currencies into your utopian community is an intriguing concept! utopiacoin and utocoin each have their unique features and functions, providing community members with more choices and flexibility. Let me help you explain the
                 characteristics and operations of these two currencies:</p>
 
-            <h3>UTOPIACOIN:</h3>
+            <h3>PIACOIN:</h3>
             <ul>
                 <li><strong>Total Supply:</strong> 100 million coins</li>
-                <li><strong>Serving as Utopia's Fixed Asset:</strong> utopiacoin represents the fixed assets of the utopian community, reflecting the overall value and wealth of the community. Within the utopian community, utopiacoin may be used to purchase
-                    land, housing, infrastructure, and as tokens for community governance and voting rights.</li>
+                <li><strong>Serving as utopia's Fixed Asset:</strong> piacoin represents the fixed assets of the utopian community, reflecting the overall value and wealth of the community. Within the utopian community, piacoin may be used to purchase land,
+                    housing, infrastructure, and as tokens for community governance and voting rights.</li>
                 <li>
-                    utopiacoin tokens will be exchanged 1:1890000 with utocoin tokens, with all utopiacoin tokens being fully exchanged for utocoin tokens. Additionally, the utocoin tokens exchanged will subsequently be burned.</li>
+                    piacoin tokens will be exchanged 1:1890000 with utocoin tokens, with all piacoin tokens being fully exchanged for utocoin tokens. Additionally, the utocoin tokens exchanged will subsequently be burned.</li>
             </ul>
 
             <h3>UTOCOIN:</h3>
@@ -198,12 +222,12 @@
                 mechanism. Ensure that the implementation takes into account the needs and interests of community members, as well as the reasonableness and transparency of currency supply and governance mechanisms.</p>
         </div>
     </section>
-    <!-- 代币分配分析图表 -->
+    <!-- Token distribution analysis charts -->
     <section id="token-distribution">
         <div class="container">
-            <h2>UTOPIA Token Distribution Analysis</h2>
+            <h2>UTO/PIA Token Distribution Analysis</h2>
             <div class="chart-container">
-                <!-- 第一个代币的饼图 -->
+                <!-- First token pie chart -->
                 <div class="chart">
                     <h3>UTOCOIN Token A Distribution</h3>
                     <p>Token Standard:ICRC 2</p>
@@ -212,114 +236,139 @@
                     <canvas id="tokenAChart" width="400" height="400"></canvas>
                 </div>
 
-                <!-- 第二个代币的饼图 -->
+                <!-- Second token pie chart -->
                 <div class="chart">
-                    <h3>UTOPIACOIN Token B Distribution</h3>
+                    <h3>PIACOIN Token B Distribution</h3>
                     <p>Token Standard:ICRC 2</p>
-                    <p>Canister:$$$$$$$$$$$$$$</p>
+                    <p>Canister:uuoc6-fiaaa-aaaam-aclqq-cai</p>
                     <p>Total Supply: 100,000,000</p>
                     <canvas id="tokenBChart" width="400" height="400"></canvas>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- JavaScript 代码 -->
-    <script>
-        // 获取第一个 canvas 元素
-        var ctxA = document.getElementById('tokenAChart').getContext('2d');
-        // 创建第一个代币的饼图
-        var tokenAChart = new Chart(ctxA, {
-            type: 'pie',
-            data: {
-                labels: ['LP POOL', 'Airdrop UTOCOIN', ],
-                datasets: [{
-                    label: 'Token A Distribution',
-                    data: [90, 10, ], // 修改数据以反映实际的代币分配比例
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.6)',
-                        'rgba(54, 162, 235, 0.6)',
-                        'rgba(255, 206, 86, 0.6)',
-                        'rgba(75, 192, 192, 0.6)',
-                        'rgba(153, 102, 255, 0.6)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: false,
-                tooltips: {
-                    callbacks: {
-                        label: function(tooltipItem, data) {
-                            var dataset = data.datasets[tooltipItem.datasetIndex];
-                            var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
-                                return previousValue + currentValue;
-                            });
-                            var currentValue = dataset.data[tooltipItem.index];
-                            var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
-                            return percentage + "%";
+        <!-- Progress bar -->
+        <section id="token black hole pool">
+            <div class="container">
+                <h2>UTO/PIA Token progress distribution analysis</h2>
+                <div class="progress-bar-container">
+                    <p class="progress-label">UTOCOIN Black Hole Pool: 90%</p>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="progress-bar-container">
+                    <p class="progress-label">PIACOIN Exchange UTOCOIN Progress Schedule</p>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 5%;"></div>
+                    </div>
+                </div>
+                <div class="progress-bar-container">
+                    <p class="progress-label">UTOCOIN burning progress analysis: It is anticipated that eventually 90% of the total token supply will need to be burnt：</p>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 3%;"></div>
+                    </div>
+                </div>
+        </section>
+        <!-- JavaScript code -->
+        <script>
+            // Get the first canvas element
+            var ctxA = document.getElementById('tokenAChart').getContext('2d');
+            // Create the first token pie chart
+            var tokenAChart = new Chart(ctxA, {
+                type: 'pie',
+                data: {
+                    labels: ['LP POOL', 'Airdrop UTOCOIN', ],
+                    datasets: [{
+                        label: 'Token A Distribution',
+                        data: [90, 10, ], // Modify data to reflect actual token allocation ratios
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.6)',
+                            'rgba(54, 162, 235, 0.6)',
+                            'rgba(255, 206, 86, 0.6)',
+                            'rgba(75, 192, 192, 0.6)',
+                            'rgba(153, 102, 255, 0.6)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    tooltips: {
+                        callbacks: {
+                            label: function(tooltipItem, data) {
+                                var dataset = data.datasets[tooltipItem.datasetIndex];
+                                var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                                    return previousValue + currentValue;
+                                });
+                                var currentValue = dataset.data[tooltipItem.index];
+                                var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
+                                return percentage + "%";
+                            }
                         }
                     }
                 }
-            }
-        });
+            });
 
-        // 获取第二个 canvas 元素
-        var ctxB = document.getElementById('tokenBChart').getContext('2d');
-        // 创建第二个代币的饼图
-        var tokenBChart = new Chart(ctxB, {
-            type: 'pie',
-            data: {
-                labels: ['UTOPIACOIN SWAP UTOCIN', ],
-                datasets: [{
-                    label: 'Token B Distribution',
-                    data: [100, ], // 修改数据以反映实际的代币分配比例
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.6)',
-                        'rgba(54, 162, 235, 0.6)',
-                        'rgba(255, 206, 86, 0.6)',
-                        'rgba(75, 192, 192, 0.6)',
-                        'rgba(153, 102, 255, 0.6)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: false,
-                tooltips: {
-                    callbacks: {
-                        label: function(tooltipItem, data) {
-                            var dataset = data.datasets[tooltipItem.datasetIndex];
-                            var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
-                                return previousValue + currentValue;
-                            });
-                            var currentValue = dataset.data[tooltipItem.index];
-                            var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
-                            return percentage + "%";
+            // Get the second canvas element
+            var ctxB = document.getElementById('tokenBChart').getContext('2d');
+            // Create the second token pie chart
+            var tokenBChart = new Chart(ctxB, {
+                type: 'pie',
+                data: {
+                    labels: ['UTOPIACOIN SWAP UTOCIN', ],
+                    datasets: [{
+                        label: 'Token B Distribution',
+                        data: [100, ], // Modify data to reflect actual token allocation ratios
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.6)',
+                            'rgba(54, 162, 235, 0.6)',
+                            'rgba(255, 206, 86, 0.6)',
+                            'rgba(75, 192, 192, 0.6)',
+                            'rgba(153, 102, 255, 0.6)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    tooltips: {
+                        callbacks: {
+                            label: function(tooltipItem, data) {
+                                var dataset = data.datasets[tooltipItem.datasetIndex];
+                                var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                                    return previousValue + currentValue;
+                                });
+                                var currentValue = dataset.data[tooltipItem.index];
+                                var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
+                                return percentage + "%";
+                            }
                         }
                     }
                 }
-            }
-        });
-    </script>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Our Utopia. All rights reserved.</p>
-        </div>
-    </footer>
+            });
+        </script>
+
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Our Utopia. All rights reserved.</p>
+            </div>
+        </footer>
+
 </body>
 
 </html>

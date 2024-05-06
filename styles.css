@@ -1,10 +1,18 @@
 /* styles.css */
 
+
+/* Set the overall background color */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #1E90FF;
+    /* Light gray background */
 }
+
+
+/* Set container width and margins */
 
 .container {
     width: 80%;
@@ -12,150 +20,107 @@ body {
     padding: 20px 0;
 }
 
+
+/* Set header background color and padding */
+
 header {
-    background-color: #4077ed;
+    background-color: #00BFFF;
+    /* Blue background */
     padding: 20px 0;
 }
+
+
+/* Set header h1 styles */
 
 header h1 {
     margin: 0;
     font-size: 36px;
     color: #333;
+    /* Dark gray text */
 }
+
+
+/* Set navigation list styles */
 
 nav ul {
     list-style-type: none;
     padding: 0;
 }
 
+
+/* Set navigation list item display */
+
 nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
+
+/* Set navigation link styles */
+
 nav ul li a {
     text-decoration: none;
     color: #333;
+    /* Dark gray text */
     font-weight: bold;
 }
+
+
+/* Set section padding */
 
 section {
     padding: 50px 0;
 }
+
+
+/* Set hero background image and text styles */
 
 #hero {
     background-image: url('utopia.jpg');
     /* Add your hero image here */
     background-size: cover;
     color: #fff;
+    /* White text */
     text-align: center;
 }
+
+
+/* Set hero h2 styles */
 
 #hero h2 {
     font-size: 48px;
     margin: 0;
 }
 
+
+/* Set hero p styles */
+
 #hero p {
     font-size: 18px;
     margin-top: 20px;
 }
 
+
+/* Set footer styles */
+
 footer {
     background-color: #333;
+    /* Dark gray background */
     color: #fff;
+    /* White text */
     text-align: center;
     padding: 20px 0;
 }
+
+
+/* Set footer p styles */
 
 footer p {
     margin: 0;
 }
 
 
-/* 设置整体背景色 */
-
-body {
-    background-color: #f7f7f7;
-    /* 浅灰色背景 */
-}
-
-
-/* 设置标题颜色 */
-
-h1 {
-    color: #333;
-    /* 深灰色文本 */
-}
-
-
-/* 设置导航链接颜色 */
-
-nav a {
-    color: #666;
-    /* 中灰色链接 */
-}
-
-
-/* 设置主要内容区域背景色 */
-
-.container {
-    background-color: #fff;
-    /* 白色背景 */
-}
-
-
-/* 设置段落文本颜色 */
-
-p {
-    color: #555;
-    /* 深灰色文本 */
-}
-
-
-/* 设置列表项目颜色 */
-
-ul {
-    color: #555;
-    /* 深灰色文本 */
-}
-
-
-/* 设置链接颜色 */
-
-a {
-    color: #007bff;
-    /* 蓝色链接 */
-}
-
-
-/* 设置链接悬停时的颜色 */
-
-a:hover {
-    color: #0056b3;
-    /* 深蓝色悬停链接 */
-}
-
-
-/* 设置页脚文本颜色 */
-
-footer {
-    color: #fff;
-    /* 白色文本 */
-    background-color: #333;
-    /* 深灰色背景 */
-}
-
-
-/* 设置导航栏背景颜色为蓝色 */
-
-header {
-    background-color: #007bff;
-    /* 蓝色背景 */
-}
-
-
-/* 添加 img-responsive 类的样式 */
+/* Add styles for img-responsive class */
 
 .img-responsive {
     max-width: 100%;
